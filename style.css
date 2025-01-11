@@ -596,8 +596,8 @@ nav .fa-solid{
     }
 
     .skills-list-item img{
-        width: 30%;
-        height: 30%;
+        width: 50%;
+        height: 50%;
         object-fit: cover;
         transition: opacity 0.4s ease;
     }
