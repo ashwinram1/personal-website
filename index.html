@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashwin's Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fc5634eeda.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Socials / Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Ashwin</span></h1>
+            <p>Software Engineer &amp Developer</p>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/me.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I'm a Software Engineer primarily experienced with and interested in back-end development, 
+                    databases, automation, cloud computing, and transforming data into useful and insightful 
+                    information. I have a true passion for creativity, curiosity, and a keen attention to detail.
+                    I love finding different mediums through which I can manifest these attributes. The main one is
+                    programming and software development. Back when I learned computer programming, I fell in love with
+                    it, and it is what inspired me to study Computer Science and pursue a career as a Software Engineer!
+                    However I am inspired by it beyond just my career, as I use programming in my everyday tasks to automate
+                    monotonous tasks, and to create projects that are personally useful or interesting to me. Other creative
+                    and artistic mediums which I have found to love as side-hobbies include DJing and barbering. Both of these
+                    require me to pay very close attention to detail in order to excel in them, and both offer me freedom to
+                    tinker, explore, and discover new things-- which is what I enjoy doing the most!
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('interests-hobbies')">Interests &amp Hobbies</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <div class="skills-list">
+                        <!-- Languages -->
+                        <div class="skills-list-item" hover-color="#377ef0">
+                            <img src="icons/skills/python.ico">
+                            <div class="card-description">
+                                <h2>Python</h2>
+                                <p>5+ years</p>
+                            </div>
+                        </div>
+                        <div class="skills-list-item" hover-color="#ffda43">
+                            <img src="icons/skills/sql.ico">
+                            <div class="card-description">
+                                <h2>SQL</h2>
+                                <p>4+ years</p>
+                            </div>
+                        </div>
+                        <div class="skills-list-item" hover-color="#0171b9">
+                            <img src="icons/skills/java.ico">
+                            <div class="card-description">
+                                <h2>Java</h2>
+                                <p>4+ years</p>
+                            </div>
+                        </div>
+                        <div class="skills-list-item" hover-color="#659ad3">
+                            <img src="icons/skills/c.ico">
+                            <div class="card-description">
+                                <h2>C/C++</h2>
+                                <p>4+ years</p>
+                            </div>
+                        </div>
+                        <div class="skills-list-item" hover-color="#13bf29">
+                            <img src="icons/skills/bash.ico">
+                            <div class="card-description">
+                                <h2>Bash</h2>
+                                <p>1+ years</p>
+                            </div>
+                        </div>
+                        <div class="skills-list-item" hover-color="#f7df1c">
+                            <img src="icons/skills/javascript.ico">
+                            <div class="card-description">
+                                <h2>JavaScript</h2>
+                                <p>1+ years</p>
+                            </div>
+                        </div>
+                        <div class="skills-list-item" hover-color="#05acd7">
+                            <img src="icons/skills/go.ico">
+                            <div class="card-description">
+                                <h2>Go</h2>
+                                <p>1+ years</p>
+                            </div>
+                        </div>
+                        <div class="skills-list-item" hover-color="#ce412b">
+                            <img src="icons/skills/rust.ico">
+                            <div class="card-description">
+                                <h2>Rust</h2>
+                                <p>1+ years</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Cloud/Infrastructure -->
+                        <div class="skills-list-item" hover-color="#ff9900">
+                            <img src="icons/skills/aws.ico">
+                            <div class="card-description">
+                                <h2>AWS</h2>
+                                <p>4+ years</p>
+                            </div>
+                        </div>
+                        <div class="skills-list-item" hover-color="#813cf3">
+                            <img src="icons/skills/terraform.ico">
+                            <div class="card-description">
+                                <h2>Terraform</h2>
+                                <p>2+ years</p>
+                            </div>
+                        </div>
+                        <div class="skills-list-item" hover-color="#f8a914">
+                            <img src="icons/skills/grafana.ico">
+                            <div class="card-description">
+                                <h2>Grafana</h2>
+                                <p>1+ years</p>
+                            </div>
+                        </div>
+
+                        <!-- DevOps -->
+                        <div class="skills-list-item" hover-color="#0091e2">
+                            <img src="icons/skills/docker.ico">
+                            <div class="card-description">
+                                <h2>Docker</h2>
+                                <p>1+ years</p>
+                            </div>
+                        </div>
+                        <div class="skills-list-item" hover-color="#fc6d26">
+                            <img src="icons/skills/gitlab.ico">
+                            <div class="card-description">
+                                <h2>GitLab CI/CD</h2>
+                                <p>2+ years</p>
+                            </div>
+                        </div>
+                        <div class="skills-list-item" hover-color="#de4c35">
+                            <img src="icons/skills/git.ico">
+                            <div class="card-description">
+                                <h2>Git</h2>
+                                <p>4+ years</p>
+                            </div>
+                        </div>
+
+                        <!-- Databases/stores -->
+                        <div class="skills-list-item" hover-color="#439933">
+                            <img src="icons/skills/mongodb.ico">
+                            <div class="card-description">
+                                <h2>MongoDB</h2>
+                                <p>1+ years</p>
+                            </div>
+                        </div>
+                        <div class="skills-list-item" hover-color="#ffca27">
+                            <img src="icons/skills/firebase.ico">
+                            <div class="card-description">
+                                <h2>Firebase</h2>
+                                <p>1+ years</p>
+                            </div>
+                        </div>
+                        <div class="skills-list-item" hover-color="#015f87">
+                            <img src="icons/skills/mysql.ico">
+                            <div class="card-description">
+                                <h2>MySQL</h2>
+                                <p>1+ years</p>
+                            </div>
+                        </div>
+                        <div class="skills-list-item" hover-color="#336790">
+                            <img src="icons/skills/postgresql.ico">
+                            <div class="card-description">
+                                <h2>PostgreSQL</h2>
+                                <p>2+ years</p>
+                            </div>
+                        </div>
+
+                        <!-- Others -->
+                        <div class="skills-list-item" hover-color="#fefefe">
+                            <img src="icons/skills/linux.ico">
+                            <div class="card-description">
+                                <h2>Linux</h2>
+                                <p>2+ years</p>
+                            </div>
+                        </div>
+                        <div class="skills-list-item" hover-color="#4b6981">
+                            <img src="icons/skills/api.ico">
+                            <div class="card-description">
+                                <h2>API Development</h2>
+                                <p>2+ years</p>
+                            </div>
+                        </div>
+                        <div class="skills-list-item" hover-color="#95cf00">
+                            <img src="icons/skills/android.ico">
+                            <div class="card-description">
+                                <h2>Android Development</h2>
+                                <p>1+ years</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <div class="experience-list">
+                        <div class="experience-list-item" onclick="showPopup('appian')" hover-color="#2322f0">
+                            <img src="icons/experience/appian.png">
+                            <h2>Software Engineer II @ Appian</h2>
+                            <p>Jun. 2023 - Present</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-contents" id="education">
+                    <div class="education-list">
+                        <div class="education-list-item" hover-color="#bf5700">
+                            <img src="icons/education/ut-austin.svg">
+                            <h2>University of Texas at Austin</h2>
+                            <p>Master of Science (M.S) in Computer Science</p>
+                            <p>Jan. 2024 - Dec. 2026</p>
+                        </div>
+                        <div class="education-list-item" hover-color="#006633">
+                            <img src="icons/education/gmu.ico">
+                            <h2>George Mason University</h2>
+                            <p>Bachelor of Science (B.S) in Computer Science</p>
+                            <p>Aug. 2019 - May 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-contents" id="interests-hobbies">
+                    <h2>Interests &amp Hobbies</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="popup-appian" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="hidePopup('appian')">&times;</span>
+        <p>Working on release &amp cloud infrastructure that supports the Appian platform/product for customers globally.</p>
+    </div>
+</div>
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/streamixer.png">
+                <div class="layer">
+                    <h3>STREAMIXER</h3>
+                    <p>A music streaming and mixing app that allows custom features that other apps on the market do not offer.</p>
+                    <a href="https://github.com/ashwin-ramachandran/streamixer" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/n-body.png">
+                <div class="layer">
+                    <h3>N-BODY PROBLEM SIMULATION</h3>
+                    <p>Simulates an N-body problem using the Barnes-Hut algorithm, optimized further by using MPI in C++ to enable parallelism.</p>
+                    <a href="https://github.com/ashwin-ramachandran/mpi-barnes-hut" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/connect-4.png">
+                <div class="layer">
+                    <h3>Connect 4 Android Mobile App</h3>
+                    <p>Used Java, Android Studio, and Firebase to create an Connect 4 app where users on separate devices can play against each other.</p>
+                    <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Socials &amp Contact</h1>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ashwinram11/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/ashwin-ramachandran" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:ashwin_ramachandran@outlook.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <a href="attachments/Ashwin Ramachandran Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your E-mail" required>
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2025 Ashwin Ramachandran. All rights reserved.</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const skillsListItems = document.querySelectorAll(".skills-list-item");
+
+        skillsListItems.forEach(item => {
+            const hoverColor = item.getAttribute("hover-color");
+
+            item.addEventListener("mouseenter", () => {
+                item.style.backgroundColor = hoverColor;
+            });
+
+            item.addEventListener("mouseleave", () => {
+                item.style.backgroundColor = ""; // Reset to default
+            });
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const educationListItems = document.querySelectorAll(".education-list-item");
+
+        educationListItems.forEach(item => {
+            const hoverColor = item.getAttribute("hover-color");
+
+            item.addEventListener("mouseenter", () => {
+                item.style.backgroundColor = hoverColor;
+            });
+
+            item.addEventListener("mouseleave", () => {
+                item.style.backgroundColor = ""; // Reset to default
+            });
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const experienceListItems = document.querySelectorAll(".experience-list-item");
+
+        experienceListItems.forEach(item => {
+            const hoverColor = item.getAttribute("hover-color");
+
+            item.addEventListener("mouseenter", () => {
+                item.style.backgroundColor = hoverColor;
+            });
+
+            item.addEventListener("mouseleave", () => {
+                item.style.backgroundColor = ""; // Reset to default
+            });
+        });
+    });
+
+</script>
+
+<script>
+
+    function showPopup(id) {
+        const popup = document.getElementById(`popup-${id}`);
+        popup.style.display = 'flex'; // Show the modal
+        setTimeout(() => popup.classList.add('show'), 10); // Trigger animation
+    }
+
+    function hidePopup(id) {
+        const popup = document.getElementById(`popup-${id}`);
+        popup.classList.remove('show'); // Remove animation
+        setTimeout(() => popup.style.display = 'none', 300); // Wait for animation to end
+    }
+
+</script>
+
+</body>
+</html>
